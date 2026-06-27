@@ -8,7 +8,7 @@ class Pessoa:
         self.limitacoes = limitacoes
         self.telefone = telefone
         self.imc = [0, "Não foi avaliado"]
-
+        
     def calcular_imc(self):
         self.imc[0] = self.peso / (self.altura ** 2)
 
@@ -79,7 +79,7 @@ class Personal(Pessoa):
         self.__salario = salario
         self.especialidade = especialidade
         self.alunos = alunos
-        self.filial 
+        self.filial = filial
 
 
 class Gerente(Pessoa):
