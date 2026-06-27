@@ -79,7 +79,7 @@ class Personal(Pessoa):
         self.__salario = salario
         self.especialidade = especialidade
         self.alunos = alunos
-        self.filial = filial
+        self.filial 
 
 
 class Gerente(Pessoa):
