@@ -1,8 +1,7 @@
 """Sistema de gerenciamento de academia.
 
 Módulo com classes para gerenciamento de alunos, personais, gerentes,
-treinos, exercícios, filiais e rede de academias.
-"""
+treinos, exercícios, filiais e rede de academias."""
 
 from abc import ABC, abstractmethod 
 
