@@ -182,3 +182,5 @@ class RedeAcademia:
         self.nome = nome
         self.__cnpj = cnpj
         self.filiais = filiais
+
+        
