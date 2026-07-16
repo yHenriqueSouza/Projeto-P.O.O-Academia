@@ -571,7 +571,6 @@ print("\n======== RELATÓRIO ========")
 
 personal.gerar_relatorio()
 gerente.gerar_relatorio()
-oi
 
 print("\n======== LOGIN ========")
 
