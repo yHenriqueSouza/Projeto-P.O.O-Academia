@@ -1,5 +1,4 @@
 """Sistema de gerenciamento de academia.
-"Felipe está mexendo"
 Módulo com classes para gerenciamento de alunos, personais, gerentes,
 treinos, exercícios, filiais e rede de academias."""
 
