@@ -67,7 +67,6 @@ def salvar_dados_academia(rede, filial, gerente, personal, lista_alunos, lista_e
 
 
 def carregar_dados_academia():
-    # Estruturas em formato de lista (sem uso de dicionários)
     lista_exercicios = []
     lista_treinos = []
     lista_alunos = []
@@ -151,7 +150,7 @@ def carregar_dados_academia():
         if os.path.exists("agenda_treinos_alunos.csv"):
             with open("agenda_treinos_alunos.csv", mode="r", encoding="utf-8") as f:
                 reader = csv.reader(f)
-                next(reader) # Pula cabeçalho
+                next(reader)
                 for r in reader:
                     matricula = r[1]
                     dia_semana = int(r[2])
