@@ -17,13 +17,12 @@ class Menu:
             self.aluno = self.lista_alunos[0]
             self.exercicio = self.lista_exercicios[0]
             self.treino = self.lista_treinos[0]
-            print("✓ Dados carregados a partir do banco local (CSV)!")
+            print(" Dados carregados a partir do banco local (CSV)!")
         else:
             print("Carregando banco padrão inicial...")
             self.gerar_dados_padrao()
 
     def gerar_dados_padrao(self):
-        # Criação dos Exercícios passando os dados direto no construtor correto
         supino = Exercicio("Supino Reto", "Peitoral", 4, 10, 40, 90)
         agachamento = Exercicio("Agachamento", "Pernas", 4, 12, 60, 120)
         remada = Exercicio("Remada Curvada", "Costas", 4, 10, 45, 90)
@@ -31,7 +30,6 @@ class Menu:
         self.lista_exercicios = [supino, agachamento, remada]
         self.exercicio = supino
 
-        # Criação dos Treinos
         treinoA = Treino("Treino A", "Hipertrofia", "Segunda e Quinta")
         treinoB = Treino("Treino B", "Hipertrofia", "Terça e Sexta")
         
@@ -42,23 +40,19 @@ class Menu:
         self.lista_treinos = [treinoA, treinoB]
         self.treino = treinoA
 
-        # Criação do Gerente e do Personal
         self.gerente = Gerente("Marcos", 40, 85, 1.78, "Masculino", "Nenhuma", "(84)98888-0000", 7000.0, None)
         self.personal = Personal("Carlos", 30, 82, 1.80, "Masculino", "Nenhuma", "(84)99999-0000", 4500.0, "Musculação", None)
 
-        # Criação da Filial e associações
         self.filial = Filial(1, "Academia Central", "Rua Principal, 100", "(84)3333-3333", self.gerente, 300)
         self.gerente.filial = self.filial
         self.personal.filial = self.filial
 
-        # Criação dos Alunos
         aluno1 = Aluno("Felipe", 18, 70, 1.75, "Masculino", "Nenhuma", "(84)99999-1111", "2025001", "Premium", "Hipertrofia", self.filial)
         aluno2 = Aluno("João", 22, 82, 1.81, "Masculino", "Nenhuma", "(84)99999-2222", "2025002", "Gold", "Emagrecimento", self.filial)
 
         self.lista_alunos = [aluno1, aluno2]
         self.aluno = aluno1
 
-        # Vinculações de dados e dependências
         self.filial.adicionar_aluno(aluno1)
         self.filial.adicionar_aluno(aluno2)
         self.filial.adicionar_personal(self.personal)
@@ -70,11 +64,9 @@ class Menu:
         aluno1.adicionar_treino(treinoB, 2)
         aluno2.adicionar_treino(treinoB, 1)
 
-        # Criação da Rede
         self.rede = RedeAcademia("Academia PowerFit", "00.000.000/0001-00")
         self.rede.adicionar_filial(self.filial)
 
-        # Salva o estado inicial
         a.salvar_dados_academia(self.rede, self.filial, self.gerente, self.personal, self.lista_alunos, self.lista_exercicios, self.lista_treinos)
 
     def menu_principal(self):
