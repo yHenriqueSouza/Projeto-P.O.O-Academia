@@ -244,7 +244,7 @@ class Filial:
             self.alunos.remove(aluno)
 
     def listar_alunos(self):
-        print("\n=== ALUNOS ===")
+        print("\n==== ALUNOS ====")
         for aluno in self.alunos:
             print(aluno.nome)
 
