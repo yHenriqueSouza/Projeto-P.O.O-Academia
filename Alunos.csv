@@ -1,0 +1,3 @@
+matricula,nome,idade,peso,altura,sexo,limitacoes,telefone,plano,objetivo,imc_valor,imc_classificacao,filial_nome,personal_responsavel
+2025001,Felipe,18,70.0,1.75,Masculino,Nenhuma,(84)99999-1111,Premium,Hipertrofia,22.86,Peso normal,Academia Central,Carlos
+2025002,João,22,82.0,1.81,Masculino,Nenhuma,(84)99999-2222,Gold,Emagrecimento,25.03,Sobrepeso,Academia Central,Carlos

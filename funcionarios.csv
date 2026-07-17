@@ -1,0 +1,3 @@
+nome,idade,peso,altura,sexo,limitacoes,telefone,cargo,salario,especialidade,filial_nome
+Marcos,40,85.0,1.78,Masculino,Nenhuma,(84)98888-0000,Gerente,7000.0,Comandar,Academia Central
+Carlos,30,82.0,1.8,Masculino,Nenhuma,(84)99999-0000,Personal Trainer,8000.0,Musculação,Academia Central
